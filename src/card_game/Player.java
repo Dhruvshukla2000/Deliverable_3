@@ -5,15 +5,18 @@ package card_game;
 /**
  *This class +++Insert Description Here+++
  *
- * @author Dhruv Shukla */
+ * @author Dhruv Shukla 
+ * @author Parth Contractor
+ * @Yash Patel
+ */
 import java.util.ArrayList;
 
 
 public class Player {
     private String Name;
-    private int points;
+    private int pt;
 
-    private ArrayList<Card> stack = new ArrayList<>();
+    private ArrayList<Card> st = new ArrayList<>();
 
     public Player(String name) {
         this.Name = name;
@@ -23,19 +26,19 @@ public class Player {
         return this.Name;
     }
 
-    public int getPoints() {
-        return points;
+    public int getPoint() {
+        return pt;
     }
 
-    public void setPoints(int points) {
-        this.points += points;
+    public void setPoint(int point) {
+        this.pt += point;
     }
 
     public ArrayList<Card> getStack() {
-        return stack;
+        return st;
     }
 
     public void giveCard(Card card) {
-        stack.add(card);
+        st.add(card);
     }
 }

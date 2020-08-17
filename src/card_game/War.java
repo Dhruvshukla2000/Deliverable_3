@@ -5,7 +5,10 @@ package card_game;
 /**
  *This class +++Insert Description Here+++
  *
- * @author Dhruv Shukla */
+ * @author Dhruv Shukla
+ * @author Parth Contractor
+ * @Yash Patel
+ */
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -35,23 +38,23 @@ public class War {
             player2.giveCard(deck.get(i + 1));
         }
 
-        int gains = 1;
+        int gain = 1;
         for (int i = player1.getStack().size(); i > 0; i--) {
             if (player1.getStack().get(i - 1).isGreaterThan(player2.getStack().get(i - 1))) {
-                player1.setPoints(gains);
-                gains = 1;
+                player1.setPoint(gain );
+                gain = 1;
             } else if (player2.getStack().get(i - 1).isGreaterThan(player1.getStack().get(i - 1))) {
-                player2.setPoints(gains);
-                gains = 1;
+                player2.setPoint(gain);
+                gain = 1;
             } else
                 // War!
-                gains++;
+                gain++;
         }
 
         // Determine who the winner is
-        if (player1.getPoints() > player2.getPoints()) {
+        if (player1.getPoint() > player2.getPoint()) {
             System.out.println(player1.getName() + " wins");
-        } else if (player2.getPoints() > player1.getPoints()) {
+        } else if (player2.getPoint() > player1.getPoint()) {
             System.out.println(player2.getName() + " wins");
         } else {
             System.out.println("Draw");

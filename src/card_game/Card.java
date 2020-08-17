@@ -5,7 +5,10 @@ package card_game;
 /**
  *This class +++Insert Description Here+++
  *
- * @author Dhruv Shukla */
+ * @author Dhruv Shukla
+ * @author Parth Contractor
+ * @Yash Patel
+ */
 public class Card {
     private String Color;
     private int Value;

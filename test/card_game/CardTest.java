@@ -22,40 +22,8 @@ public class CardTest {
     public void setUp() {
     }
 
-    /**
-     * Test of getValue method, of class Card.
-     */
-    
-    @Test
-    public void testGetValuegood() {
-        System.out.println("getValuegood");
-        Card instance = null;
-        int expResult = 5;
-        int result = instance.getValue();
-        assertEquals(expResult, result);
-       
-    }
-    
-    @Test
-    public void testGetValuebad() {
-        System.out.println("getValuebad");
-        Card instance = null;
-        int expResult = 0;
-        int result = instance.getValue();
-        assertEquals(expResult, result);
-       
-    }
-    
-    @Test
-    public void testGetValueboundry() {
-        System.out.println("getValueboundry");
-        Card instance = null;
-        int expResult = 13;
-        int result = instance.getValue();
-        assertEquals(expResult, result);
-       
-    }
-
+   
+   
     /**
      * Test of isGreaterThan method, of class Card.
      */
